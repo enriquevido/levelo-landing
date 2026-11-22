@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="LEVELO propone una forma de practicar inglés en sesiones breves, competir amistosamente y conocer tu progreso. Explora el prototipo interactivo y la investigación detrás del proyecto.">
+    <title>LEVELO — Tu inglés, a otro nivel.</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="assets/inter.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/poppins-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/device.css">
+    <link rel="stylesheet" href="styles/sections.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/landing.css">
+    <script type="module" src="scripts/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header" id="inicio">
+      <div class="header-inner">
+        <a href="#contenido" class="brand" aria-label="LEVELO, inicio"><img src="assets/levelo-logo.png" alt="LEVELO" width="565" height="150"></a>
+        <nav class="desktop-nav" aria-label="Navegación principal">
+          <a href="#experiencia">La aplicación</a>
+          <a href="#investigacion">Por qué LEVELO</a>
+          <a href="#propuesta">Precios</a>
+        </nav>
+        <a class="header-cta" href="https://www.figma.com/proto/tijAt40UlIiHwVsVFcfmkg/LEVELO?node-id=2025-5163&amp;scaling=scale-down" target="_blank" rel="noopener noreferrer">Probar LEVELO</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menú">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16"/>
+          </svg>
+        </button>
+      </div>
+      <nav id="mobile-nav" class="mobile-nav" aria-label="Navegación móvil" hidden>
+        <a href="#experiencia">La aplicación</a>
+        <a href="#investigacion">Por qué LEVELO</a>
+        <a href="#propuesta">Precios</a>
+        <a class="button button-primary" href="https://www.figma.com/proto/tijAt40UlIiHwVsVFcfmkg/LEVELO?node-id=2025-5163&amp;scaling=scale-down" target="_blank" rel="noopener noreferrer">Probar LEVELO</a>
+      </nav>
+    </header>
+    <main id="contenido">
+      <section class="launch-hero" aria-labelledby="hero-title">
+        <div class="launch-grid" aria-hidden="true">
+        </div>
+        <div class="launch-copy">
+          <h1 id="hero-title">Tu inglés, a otro nivel.</h1>
+          <p>Practica inglés con retos breves y sigue tu progreso, día a día.</p>
+          <a class="button launch-cta" href="#experiencia">Explorar la app</a>
+        </div>
+        <div class="launch-stage" id="launch-stage">
+          <svg class="launch-mark" viewBox="0 0 820 550" aria-hidden="true">
+            <path class="mark-bar bar-one" d="M20 550V382Q20 358 42 346L204 260Q226 248 236 266Q242 277 242 293V550Z"/>
+            <path class="mark-bar bar-two" d="M265 550V258Q265 234 287 222L449 136Q471 124 481 142Q487 153 487 169V550Z"/>
+            <path class="mark-bar bar-three" d="M510 550V134Q510 110 532 98L694 12Q716 0 726 18Q732 29 732 45V550Z"/>
+          </svg>
+          <a class="hero-device" href="#experiencia" aria-label="Explorar la demostración de LEVELO">
+            <div class="hero-device-frame"><img src="assets/levelo-home-prototype.png" alt="Pantalla de inicio del prototipo LEVELO: Andrea, nivel B1, racha de 9 días, práctica de Present perfect y reto de Diego." width="388" height="759" fetchpriority="high">
+            </div>
+          </a>
+          <div class="challenge-ticket ticket-left" aria-hidden="true">
+            <div class="ticket-paper"><span class="ticket-label">RETO B1</span>
+              <div class="ticket-vs"><strong>Andrea</strong><span>VS</span><strong>Diego</strong>
+              </div>
+            </div>
+          </div>
+          <div class="challenge-ticket ticket-right" aria-hidden="true">
+            <div class="ticket-paper"><span class="ticket-check" data-icon="check"></span><strong>¡Reto<br>completado!</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section experience-section" id="experiencia" aria-label="La aplicación">
+        <div class="container">
+          <div class="section-intro experience-intro-mobile reveal">
+            <div>
+              <h2>Haz del inglés<br>una costumbre.</h2>
+            </div>
+            <p>Ejercicios cortos, retos a tu nivel y resultados que te ayudan a saber qué mejorar.</p>
+          </div>
+          <div class="story-track" id="story-track">
+            <div class="experience-grid story-sticky" id="story-sticky">
+              <div class="experience-controls">
+                <div class="experience-intro-desktop">
+                  <h2>Haz del inglés<br>una costumbre.</h2>
+                  <p>Ejercicios cortos, retos a tu nivel y resultados que te ayudan a saber qué mejorar.</p>
+                </div>
+                <ol class="story-steps" aria-label="Etapas de la experiencia">
+                  <li class="experience-tab" id="step-practice" aria-current="step" data-mode="practice"><span class="experience-icon" data-icon="book"></span><span><strong>Practica</strong><span>Ejercicios breves por habilidad y dificultad.</span></span><span class="tab-marker" aria-hidden="true"></span>
+                  </li>
+                  <li class="experience-tab" id="step-compete" data-mode="compete"><span class="experience-icon" data-icon="duel"></span><span><strong>Compite</strong><span>Un reto amistoso, con tu nivel y a tu tiempo.</span></span><span class="tab-marker" aria-hidden="true"></span>
+                  </li>
+                  <li class="experience-tab" id="step-progress" data-mode="progress"><span class="experience-icon" data-icon="progress"></span><span><strong>Mejora</strong><span>Aciertos, errores y un siguiente paso concreto.</span></span><span class="tab-marker" aria-hidden="true"></span>
+                  </li>
+                </ol>
+                <div class="story-mobile-copy" id="story-mobile-copy">Ejercicios breves por habilidad y dificultad.</div>
+                <div class="story-progress" aria-hidden="true"><i></i>
+                </div>
+              </div>
+              <div class="demo-stage" id="demo-panel" role="region" aria-labelledby="step-practice" aria-description="Demostración de LEVELO con datos ilustrativos.">
+                <svg class="demo-mark" viewBox="0 0 820 550" aria-hidden="true">
+                  <path class="mark-bar bar-one" d="M20 550V382Q20 358 42 346L204 260Q226 248 236 266Q242 277 242 293V550Z"/>
+                  <path class="mark-bar bar-two" d="M265 550V258Q265 234 287 222L449 136Q471 124 481 142Q487 153 487 169V550Z"/>
+                  <path class="mark-bar bar-three" d="M510 550V134Q510 110 532 98L694 12Q716 0 726 18Q732 29 732 45V550Z"/>
+                </svg>
+                <div class="phone phone-demo">
+                  <div class="phone-chrome">
+                    <div class="phone-screen">
+                      <div class="app-view" id="demo-app">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section container evidence" id="investigacion" aria-labelledby="evidence-title">
+        <div class="section-intro reveal">
+          <div>
+            <h2 id="evidence-title">El problema no es querer.<br>Es encontrar el momento.</h2>
+          </div>
+          <p>Queremos que practicar inglés sea parte de tu día. Antes de diseñar LEVELO, preguntamos a 40 personas qué las limita y qué esperarían de una aplicación.</p>
+        </div>
+        <div class="evidence-board">
+          <article class="evidence-main reveal metric-animate">
+            <div class="major-metric" aria-label="70 por ciento"><strong aria-hidden="true" data-count="70">70</strong><span>%</span>
+            </div>
+            <h3>Probarían LEVELO con alta probabilidad.</h3>
+            <p>28 de 40 participantes calificaron con 4 o 5 la posibilidad de probar la versión gratuita, en una escala de 1 a 5.</p>
+            <div class="dot-grid" id="survey-dots" role="img" aria-label="28 de 40 participantes expresaron una alta probabilidad de probar LEVELO">
+            </div>
+            <div class="dot-legend" aria-label="Resaltar grupos de la encuesta">
+              <button type="button" data-highlight="high" aria-pressed="false"><i class="dot blue"></i> 28 con interés alto</button>
+              <button type="button" data-highlight="other" aria-pressed="false"><i class="dot grey"></i> 12 restantes</button>
+            </div>
+          </article>
+          <div class="evidence-side">
+            <article class="compact-stat reveal metric-animate">
+              <div class="stat-copy"><span>FRECUENCIA DE PRÁCTICA</span><strong aria-label="52.5 por ciento"><b data-count="52.5" aria-hidden="true">52.5</b><span>%</span></strong>
+                <p>Practica menos de una vez por semana o no practicó durante las últimas cuatro semanas.</p>
+              </div>
+              <div class="stat-track" role="img" aria-label="52.5 por ciento"><i class="stat-fill coral" style="--value:52.5%"></i>
+              </div>
+            </article>
+            <article class="compact-stat reveal metric-animate">
+              <div class="stat-copy"><span>PRINCIPAL OBSTÁCULO</span><strong aria-label="42.5 por ciento"><b data-count="42.5" aria-hidden="true">42.5</b><span>%</span></strong>
+                <p>Señaló la falta de tiempo como principal obstáculo para practicar más.</p>
+              </div>
+              <div class="stat-track" role="img" aria-label="42.5 por ciento"><i class="stat-fill blue" style="--value:42.5%"></i>
+              </div>
+            </article>
+            <article class="compact-stat reveal metric-animate">
+              <div class="stat-copy"><span>COMPETENCIA OPCIONAL</span><strong aria-label="62.5 por ciento"><b data-count="62.5" aria-hidden="true">62.5</b><span>%</span></strong>
+                <p>Participaría en retos amistosos de manera regular u ocasional.</p>
+              </div>
+              <div class="stat-track" role="img" aria-label="62.5 por ciento"><i class="stat-fill green" style="--value:62.5%"></i>
+              </div>
+            </article>
+          </div>
+        </div>
+        <p class="source-note">Fuente: investigación de mercado de LEVELO, 2026. Muestra por conveniencia de 40 personas; resultados exploratorios, no representativos de la población mexicana.</p>
+        <div class="market-context">
+          <div class="context-intro reveal">
+            <p class="eyebrow">CONTEXTO NACIONAL</p>
+            <h3>Un reto real.<br>Una oportunidad móvil.</h3>
+            <p>El dominio del inglés y el acceso digital ofrecen contexto para esta propuesta.</p>
+          </div>
+          <article class="context-stat reveal metric-animate">
+            <div>
+              <strong data-count="103">103</strong><span>/ 123</span>
+            </div>
+            <p>Posición de México en el EF EPI 2025, con nivel de inglés muy bajo.</p>
+            <a href="https://www.ef.com/assetscdn/WIBIwq6RdJvcD9bc8RMd/cefcom-epi-site/fact-sheets/2025/ef-epi-fact-sheet-mexico-english.pdf" target="_blank" rel="noopener noreferrer">EF English Proficiency Index 2025</a>
+          </article>
+          <article class="context-stat reveal metric-animate">
+            <div>
+              <strong><b data-count="84.6">84.6</b>%</strong>
+            </div>
+            <p>De la población mexicana de seis años o más usó teléfono celular en 2025.</p>
+            <a href="https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2026/endutih/ENDUTIH_25.pdf" target="_blank" rel="noopener noreferrer">INEGI · ENDUTIH 2025</a>
+          </article>
+        </div>
+        <p class="source-note context-note">El EF EPI se basa en participantes de su prueba de idioma; no corresponde a una estimación representativa de todos los habitantes de México.</p>
+      </section>
+      <section class="section container" id="propuesta" aria-labelledby="propuesta-title">
+        <div class="section-intro reveal">
+          <div>
+            <h2 id="propuesta-title">Accesible para empezar.<br>Espacio para crecer.</h2>
+          </div>
+          <p>Una versión gratuita como punto de partida y opciones adicionales en una etapa posterior.</p>
+        </div>
+        <div class="plan-grid">
+          <article class="plan free-plan reveal">
+            <div class="plan-top"><span class="plan-kicker">VERSIÓN GRATUITA PROPUESTA</span>
+            </div>
+            <h3>Empieza a practicar.</h3>
+            <div class="plan-price">$0<span> MXN</span>
+            </div>
+            <p>Las funciones principales, sin compromiso de suscripción.</p>
+            <ul>
+              <li data-check>Ejercicios de vocabulario, gramática, lectura y comprensión auditiva.</li>
+              <li data-check>Competencias amistosas opcionales.</li>
+              <li data-check>Progreso básico y ejercicios recomendados.</li>
+            </ul>
+          </article>
+          <article class="plan premium-plan reveal">
+            <div class="plan-top"><span class="plan-kicker">PREMIUM · ETAPA POSTERIOR</span>
+            </div>
+            <h3>Más profundidad.</h3>
+            <div class="plan-price">$79<span> MXN / mes</span>
+            </div>
+            <p>Precio inicial de referencia, sujeto a validación.</p>
+            <ul>
+              <li data-check>Prácticas especializadas para distintos objetivos.</li>
+              <li data-check>Retroalimentación más detallada.</li>
+              <li data-check>Seguimiento personalizado de errores.</li>
+            </ul>
+          </article>
+        </div>
+        <div class="future-band reveal">
+          <div class="future-lead">
+            <h3>Una evolución por etapas.</h3>
+            <p>Primero validaremos la experiencia de práctica.</p>
+          </div>
+          <div class="future-item"><span class="future-icon" data-icon="school"></span>
+            <div>
+              <strong>LEVELO para universidades</strong>
+              <p>Posibles programas piloto con grupos y reportes.</p>
+            </div>
+          </div>
+          <div class="future-item"><span class="future-icon" data-icon="message"></span>
+            <div>
+              <strong>Conversación y entrevistas</strong>
+              <p>Prácticas simuladas con IA, en una etapa futura.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="closing-new section-wide reveal" aria-labelledby="closing-title">
+        <svg class="closing-mark" viewBox="0 0 820 550" aria-hidden="true">
+          <path class="mark-bar bar-one" d="M20 550V382Q20 358 42 346L204 260Q226 248 236 266Q242 277 242 293V550Z"/>
+          <path class="mark-bar bar-two" d="M265 550V258Q265 234 287 222L449 136Q471 124 481 142Q487 153 487 169V550Z"/>
+          <path class="mark-bar bar-three" d="M510 550V134Q510 110 532 98L694 12Q716 0 726 18Q732 29 732 45V550Z"/>
+        </svg>
+        <div>
+          <h2 id="closing-title">Cinco minutos.<br>Un paso adelante.</h2>
+          <p>Conoce la experiencia completa de LEVELO.</p>
+          <a class="button launch-cta" href="https://www.figma.com/proto/tijAt40UlIiHwVsVFcfmkg/LEVELO?node-id=2025-5163&amp;scaling=scale-down" target="_blank" rel="noopener noreferrer">Probar el prototipo</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer container">
+      <div>
+        <a href="#contenido" class="brand"><img src="assets/levelo-logo.png" alt="LEVELO" width="565" height="150"></a>
+        <p>Practica, compite y mejora tu inglés.</p>
+      </div>
+      <div>
+        <span>PROYECTO UNIVERSITARIO</span>
+        <p>Ingeniería de Software · Universidad Veracruzana<br>Coatzacoalcos, Veracruz · 2026</p>
+      </div>
+      <a class="text-link" href="#contenido">Volver al inicio</a>
+    </footer>
+  </body>
+</html>
